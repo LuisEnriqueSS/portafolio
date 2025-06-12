@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Supelano - Backend Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Luis Supelano</a>
+            </div>
+            <div class="right">
+                <a href="#about-section">Acerca de mi</a>
+                <!-- <a href="#experience-section">Experience</a> -->
+                <a href="#projects-section">Experiencia</a>
+                <a href="#skills-section">Habilidades</a>
+                <a href="https://wa.me/573028359315" target="_blank">Deja un mensaje!</a>
+            </div>
+        </nav>
+    </header>
+    <section id="about-section">
+        <h2>¡Hola mundo! ¡Soy Luis!</h2>
+        <div class="headshot">
+            <picture>
+                <source srcset="images/webp/headshot.webp" type="image/webp">
+                <img src="images/headshot.png" alt="headshot">
+            </picture>
+        </div>
+        <div class="bio">
+            <p>
+                Mid Senior Full Stack Developer especializado en arquitecturas escalables y sistemas distribuidos.
+                He liderado migraciones arquitectonicas complejas desde monolitos legacy hacia Clean Architecture,
+                mentoreando equipos y estableciendo estandares que reducen bugs en produccion.
+            </p>
+            <br>
+            <p>
+                Mi experiencia abarca desde la implementacion de servicios de IA conversacional con LLMs hasta la
+                optimizacion de sistemas críticos con Redis y PostgreSQL. Trabajo con stack moderno:
+                NestJS, FastAPI, Angular, y aplico consistentemente principios SOLID y patrones DDD.
+            </p>
+            <br>
+            <p>
+                Fuera del codigo, disfruto del aprendizaje continuo en tecnologías y los videojuegos. Siempre buscando
+                el proximo reto tecnico que impacte positivamente el negocio.
+            </p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/luis.enriquito/?hl=es" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/luis-enrique-supelano-suarez-82b7b41a6" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/LuisEnriqueSS" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section id="projects-section">
+        <h2>Experiencia Profesional</h2>
+
+        <div class="timeline">
+            <!-- BokiAI - Trabajo Actual -->
+            <div class="timeline-item left">
+                <div class="timeline-content current-job">
+                    <div class="current-badge">Actual</div>
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="company-info">
+                            <h3>BokiAI</h3>
+                            <div class="position">Senior Full Stack Developer</div>
+                        </div>
+                    </div>
+                    <div class="period">
+                        <i class="fa-solid fa-calendar"></i>
+                        Marzo 2025 – Presente
+                    </div>
+                    <div class="description">
+                        Lideré la implementación completa del backend para un MVP aplicando Clean Architecture y
+                        principios SOLID. Desarrollé un servicio de IA conversacional para WhatsApp con FastAPI y LLMs,
+                        construyendo también la SPA en Angular con diseño atómico.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">TypeORM</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">LLM</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enovate -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <div class="company-info">
+                            <h3>Enovate</h3>
+                            <div class="position">Backend/Full Stack Developer</div>
+                        </div>
+                    </div>
+                    <div class="period">
+                        <i class="fa-solid fa-calendar"></i>
+                        Junio 2024 – Marzo 2025
+                    </div>
+                    <div class="description">
+                        Lideré la migración arquitectónica completa de monolito legacy a Clean Architecture, capacitando
+                        al equipo y estableciendo estándares que redujeron bugs en producción. Implementé soluciones de
+                        alto rendimiento con Redis y colaboré en el modelado de PostgreSQL desde cero.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Clean Architecture</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IDARTES -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="company-info">
+                            <h3>IDARTES</h3>
+                            <div class="position">Full-Stack Developer</div>
+                        </div>
+                    </div>
+                    <div class="period">
+                        <i class="fa-solid fa-calendar"></i>
+                        Marzo 2023 – Enero 2024
+                    </div>
+                    <div class="description">
+                        Desarrollé y mantuve la aplicación web "Pandora" end-to-end. Optimicé rendimiento de base de
+                        datos implementando índices estratégicos y lideré el desarrollo de módulos críticos para
+                        exportación de PDF y Excel, automatizando reportes administrativos.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MariaDB</span>
+                        <span class="tech-tag">jQuery</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">AJAX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design Projects Subsection -->
+        <div class="project-subsection">
+            <h2>Proyectos Destacados</h2>
+            <div #swiperRef="" class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                    
+                    <!-- CRUD NestJS -->
+                    <div class="swiper-slide">
+                        <a href="https://github.com/LuisEnriqueSS/crud_usuarios_practica_nestjs" target="_blank" class="project-box">
+                            <div class="project-header">
+                                <i class="fa-solid fa-database project-icon"></i>
+                            </div>
+                            <h4>CRUD Usuarios - NestJS</h4>
+                            <h5><em>TypeScript • NestJS</em></h5>
+                            <p>Sistema CRUD completo para gestión de usuarios implementado con NestJS y TypeScript. Demuestra dominio de arquitecturas escalables y mejores prácticas.</p>
+                        </a>
+                    </div>
+        
+                    <!-- E-commerce Angular -->
+                    <div class="swiper-slide">
+                        <a href="https://github.com/LuisEnriqueSS/ecomerce-angular" target="_blank" class="project-box">
+                            <div class="project-header">
+                                <i class="fa-solid fa-shopping-cart project-icon"></i>
+                            </div>
+                            <h4>E-commerce Angular</h4>
+                            <h5><em>TypeScript • Angular</em></h5>
+                            <p>Aplicación de comercio electrónico full-stack desarrollada con Angular. Implementa componentes reutilizables y gestión de estado moderna.</p>
+                        </a>
+                    </div>
+              
+                    <!-- Clean Code Courses -->
+                    <div class="swiper-slide">
+                        <a href="https://github.com/LuisEnriqueSS/curso-principios-solid-csharp" target="_blank" class="project-box">
+                            <div class="project-header">
+                                <i class="fa-solid fa-code project-icon"></i>
+                            </div>
+                            <h4>Principios SOLID - C#</h4>
+                            <h5><em>C# • Clean Architecture</em></h5>
+                            <p>Implementación práctica de principios SOLID y patrones de diseño en C#. Demuestra compromiso con código limpio y arquitecturas mantenibles.</p>
+                        </a>
+                    </div>
+        
+                    <!-- Laravel CRUD -->
+                    <div class="swiper-slide">
+                        <a href="https://github.com/LuisEnriqueSS/crud-laravel-6-platzi" target="_blank" class="project-box">
+                            <div class="project-header">
+                                <i class="fa-brands fa-laravel project-icon"></i>
+                            </div>
+                            <h4>CRUD Laravel</h4>
+                            <h5><em>PHP • Laravel</em></h5>
+                            <p>Sistema CRUD desarrollado con Laravel 6, aplicando mejores prácticas del framework y patrones MVC para desarrollo web escalable.</p>
+                        </a>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-php"></i>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-js-square"></i>
+            <i class="fa-brands fa-angular"></i>
+            <i class="fa-brands fa-laravel"></i>
+            <i class="fa-brands fa-docker"></i>
+            <i class="fa-solid fa-database"></i>
+            <i class="devicon-postgresql-plain"></i>
+            <i class="devicon-mongodb-plain"></i>
+            <i class="fa-brands fa-git-alt"></i>
+            <i class="fa-brands fa-github-alt"></i>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <footer>
+        <p>&copy; <span id="year"></span> Luis Supelano. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Automatically update the copyright year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Initialize Swiper
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto'
+            });
+        });
+    </script>
+</body>
+
+</html>
