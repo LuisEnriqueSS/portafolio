@@ -59,6 +59,20 @@ nav {
     letter-spacing: -0.5px;
 }
 
+.logo-short {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .logo-full {
+        display: none;
+    }
+
+    .logo-short {
+        display: inline;
+    }
+}
+
 .nav-links {
     display: flex;
     gap: 24px;
@@ -693,7 +707,98 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    nav {
+        padding: 16px 12px;
+        flex-wrap: nowrap;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 0.95rem;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        justify-content: flex-end;
+    }
+
+    .nav-links a:not(.btn-primary) {
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .lang-toggle {
+        padding: 5px;
+    }
+
+    .lang-btn {
+        padding: 5px 11px;
+        font-size: 0.75rem;
+    }
+}
+
 @media (max-width: 640px) {
+    nav {
+        padding: 14px 12px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 0.85rem;
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    .logo-full {
+        display: none;
+    }
+
+    .logo-short {
+        display: inline;
+    }
+
+    .nav-links {
+        gap: 8px;
+        flex-shrink: 0;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-links a:not(.btn-primary) {
+        font-size: 0.8rem;
+    }
+
+    .nav-links a[href="#experience"],
+    .nav-links a[href="#skills"] {
+        display: none;
+    }
+
+    .lang-toggle {
+        flex-shrink: 0;
+        padding: 4px;
+    }
+
+    .lang-btn {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+    }
+
+    .btn-primary {
+        padding: 7px 14px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -709,8 +814,33 @@ footer {
     .footer-cta h2 {
         font-size: 2rem;
     }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 12px 10px;
+    }
+
+    .logo {
+        font-size: 0.75rem;
+        max-width: 45%;
+    }
 
     .nav-links {
-        gap: 12px;
+        gap: 6px;
+    }
+
+    .lang-toggle {
+        padding: 3px;
+    }
+
+    .lang-btn {
+        padding: 3px 8px;
+        font-size: 0.65rem;
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+        font-size: 0.75rem;
     }
 }
