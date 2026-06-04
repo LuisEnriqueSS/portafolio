@@ -5,7 +5,7 @@ const translations = {
         'nav-skills': 'Stack',
         'hero-title': 'Construyo los',
         'hero-engines': 'Motores.',
-        'hero-subtitle': 'Backend Engineer especializado en transformar lógica de negocio compleja en APIs limpias, escalables y fáciles de mantener. Clean Architecture es mi religión.',
+        'hero-subtitle': 'Backend Engineer con 3+ años construyendo sistemas en producción. Liderando actualmente la arquitectura de un ERP multi-tenant para el sector construcción. Especializado en arquitecturas limpias y sistemas escalables.',
         'hero-contact': 'Conversemos',
         'hero-download': 'Descargar CV',
         'stats-years': 'Años Exp',
@@ -15,7 +15,7 @@ const translations = {
         'projects-subtitle': 'Resolviendo problemas reales con arquitecturas robustas',
         'card1-label': '🏗️ ACTUAL • INGENIERO LÍDER',
         'card1-title': 'ERP Multi-tenant desde Cero',
-        'card1-description': 'Arquitecté y desarrollo un ERP completo para el sector construcción en Safrid Ingeniería. Sistema desacoplado usando Clean Architecture que gestiona obras, inventarios y flujos financieros.',
+        'card1-description': 'Diseñé aislamiento multi-tenant con esquemas PostgreSQL para garantizar cero filtración de datos entre clientes. Capa de dominio primero (DDD), luego API, luego UI. Full stack dockerizado con estructura lista para CI/CD.',
         'card2-label': '🚀 LOGRO TÉCNICO',
         'card2-seconds': 'Segundos',
         'card2-description': 'Reduje un proceso crítico de backend de 20 minutos a segundos mediante multi-threading, optimización de queries SQL y caching inteligente con Redis en Enovate.',
@@ -62,8 +62,18 @@ const translations = {
         'skills-architecture': 'Arquitectura & Patrones',
         'skills-testing': 'Pruebas Unitarias',
         'skills-patterns': 'Patrones de Diseño',
-        'footer-title': '¿Construimos algo juntos?',
-        'footer-subtitle': 'Busco equipos que valoren código limpio, buenas prácticas y arquitecturas escalables.<br>Disponible para trabajo remoto o híbrido.',
+        'principles-title': 'Cómo Trabajo',
+        'principles-subtitle': 'Principios de ingeniería detrás de cada sistema que construyo',
+        'principle1-title': 'La complejidad es el último recurso',
+        'principle1-desc': 'Empiezo con la solución más simple que funcione, y refactorizo hacia patrones solo cuando el dolor es real.',
+        'principle2-title': 'Midió, luego optimizó',
+        'principle2-desc': 'En Enovate perfilé antes de tocar código. "20 min → segundos" surgió de datos, no de intuición.',
+        'principle3-title': 'La lógica de negocio define la arquitectura',
+        'principle3-desc': 'El diseño multi-tenant del ERP nació de la necesidad de aislar datos financieros por cliente, no de un blog post.',
+        'principle4-title': 'Infraestructura como código',
+        'principle4-desc': 'Docker y CI/CD desde el día uno. No hago deploys manuales.',
+        'footer-title': 'Disponible para roles de Backend Engineer & Software Architect',
+        'footer-subtitle': 'Construyendo sistemas escalables para equipos de alto impacto.<br>Abierto a oportunidades remotas e híbridas.',
         'footer-linkedin': 'Conectemos en LinkedIn',
         'footer-copy': '© 2025 Luis Supelano. Construido con ❤️ y principios de Clean Code.'
     },
@@ -72,7 +82,7 @@ const translations = {
         'nav-skills': 'Stack',
         'hero-title': 'I Build the',
         'hero-engines': 'Engines.',
-        'hero-subtitle': 'Backend Engineer specialized in transforming complex business logic into clean, scalable, and maintainable APIs. Clean Architecture is my religion.',
+        'hero-subtitle': 'Backend Engineer with 3+ years shipping production systems. Currently leading architecture of a multi-tenant ERP for the construction sector. Specialized in clean architectures and scalable systems.',
         'hero-contact': "Let's Talk",
         'hero-download': 'Download Resume',
         'stats-years': 'Years Exp',
@@ -82,7 +92,7 @@ const translations = {
         'projects-subtitle': 'Solving real problems with robust architectures',
         'card1-label': '🏗️ CURRENT • LEAD ENGINEER',
         'card1-title': 'Multi-tenant ERP from Scratch',
-        'card1-description': 'Architected and developing a complete ERP for the construction sector at Safrid Ingeniería. Decoupled system using Clean Architecture managing projects, inventory, and financial flows.',
+        'card1-description': 'Designed multi-tenant data isolation using PostgreSQL schemas to guarantee zero data leakage between clients. Domain layer first (DDD), then API, then UI. Dockerized full stack with CI/CD-ready structure.',
         'card2-label': '🚀 TECHNICAL ACHIEVEMENT',
         'card2-seconds': 'Seconds',
         'card2-description': 'Reduced a critical backend process from 20 minutes to seconds through multi-threading, SQL query optimization, and intelligent caching with Redis at Enovate.',
@@ -129,8 +139,18 @@ const translations = {
         'skills-architecture': 'Architecture & Patterns',
         'skills-testing': 'Unit Testing',
         'skills-patterns': 'Design Patterns',
-        'footer-title': 'Shall we build something together?',
-        'footer-subtitle': 'I seek teams that value clean code, best practices, and scalable architectures.<br>Available for remote or hybrid work.',
+        'principles-title': 'How I Work',
+        'principles-subtitle': 'Engineering principles behind every system I build',
+        'principle1-title': 'Complexity is a last resort',
+        'principle1-desc': 'I start with the simplest solution that works, and refactor into patterns only when the pain is real.',
+        'principle2-title': 'Measure, then optimize',
+        'principle2-desc': 'At Enovate, I profiled before touching code. "20 min → seconds" came from data, not intuition.',
+        'principle3-title': 'Business logic owns the architecture',
+        'principle3-desc': "The ERP's multi-tenant design came from the need to isolate financial data per client, not from a blog post.",
+        'principle4-title': 'Infrastructure as code',
+        'principle4-desc': "Docker and CI/CD from day one. I don't deploy manually.",
+        'footer-title': 'Available for Backend Engineer & Software Architect roles',
+        'footer-subtitle': 'Building scalable systems for high-impact teams.<br>Open to remote and hybrid opportunities.',
         'footer-linkedin': "Let's Connect on LinkedIn",
         'footer-copy': '© 2025 Luis Supelano. Built with ❤️ and Clean Code principles.'
     }
@@ -218,4 +238,10 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
 } else {
     init();
+}
+
+// Detectar idioma del navegador para visitantes internacionales
+const userLang = navigator.language || navigator.userLanguage;
+if (userLang && userLang.startsWith('en')) {
+    changeLanguage('en');
 }

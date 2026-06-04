@@ -6,9 +6,39 @@
     <title>Luis Supelano - Backend Engineer</title>
     <meta name="description" content="Backend Engineer especializado en arquitecturas escalables, Clean Code y optimización de rendimiento. Python, Node.js, PostgreSQL.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"></noscript>
+
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+
     <link rel="stylesheet" href="styles.css">
+
+    <meta property="og:title" content="Luis Supelano - Backend Engineer">
+    <meta property="og:description" content="Backend Engineer specialized in scalable architectures, Clean Architecture and performance optimization. Python, FastAPI, PostgreSQL.">
+    <meta property="og:type" content="website">
+    <!-- TODO: Reemplazar con tu dominio real -->
+    <meta property="og:url" content="https://tudominio.com">
+    <meta property="og:image" content="https://tudominio.com/images/foto-perfil.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://tudominio.com">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Luis Enrique Supelano Suarez",
+      "jobTitle": "Backend Engineer",
+      "url": "https://tudominio.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/luis-enrique-supelano-suarez-82b7b41a6",
+        "https://github.com/TU_USUARIO"
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -26,8 +56,12 @@
                 <button class="lang-btn" data-lang="en">EN</button>
             </div>
 
-            <a href="https://www.linkedin.com/in/luis-enrique-supelano-suarez-82b7b41a6" target="_blank" class="btn-primary">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            <a href="https://www.linkedin.com/in/luis-enrique-supelano-suarez-82b7b41a6" target="_blank" class="btn-primary" rel="noopener noreferrer nofollow">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+            <!-- TODO: Reemplazar TU_USUARIO con tu usuario de GitHub real -->
+            <a href="https://github.com/TU_USUARIO" target="_blank" class="btn-primary" rel="noopener noreferrer nofollow" aria-label="GitHub">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
             </a>
         </div>
     </nav>
@@ -39,21 +73,21 @@
                 <span class="gradient-text" data-i18n="hero-engines">Motores.</span>
             </h1>
             <p class="hero-subtitle" data-i18n="hero-subtitle">
-                Backend Engineer especializado en transformar lógica de negocio compleja en APIs limpias, escalables y fáciles de mantener. Clean Architecture es mi religión.
+                Backend Engineer con 3+ años construyendo sistemas en producción. Liderando actualmente la arquitectura de un ERP multi-tenant para el sector construcción. Especializado en arquitecturas limpias y sistemas escalables.
             </p>
 
             <div class="hero-ctas">
                 <a href="mailto:supelanosuarezluisenrique5@gmail.com" class="btn-hero btn-hero-primary">
-                    <i class="fa-solid fa-envelope"></i> <span data-i18n="hero-contact">Conversemos</span>
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i> <span data-i18n="hero-contact">Conversemos</span>
                 </a>
-                <a href="pdf/Luis Enrique Supelano Suarez - CV ATS  (1) (1).pdf" class="btn-hero btn-hero-secondary" target="_blank" download="CV_Luis_Supelano.pdf">
-                    <i class="fa-solid fa-download"></i> <span data-i18n="hero-download">Descargar CV</span>
+                <a href="pdf/cv-luis-supelano.pdf" class="btn-hero btn-hero-secondary" target="_blank" download="cv-luis-supelano.pdf" rel="noopener noreferrer">
+                    <i class="fa-solid fa-download" aria-hidden="true"></i> <span data-i18n="hero-download">Descargar CV</span>
                 </a>
             </div>
 
             <div class="hero-stats">
                 <div class="stat-item">
-                    <div class="stat-number">2+</div>
+                    <div class="stat-number">3+</div>
                     <div class="stat-label" data-i18n="stats-years">Años Exp</div>
                 </div>
                 <div class="stat-item">
@@ -82,11 +116,11 @@
             <div class="bento-card card-large fade-in">
                 <div class="card-label" data-i18n="card1-label">🏗️ ACTUAL • INGENIERO LÍDER</div>
                 <div class="card-icon">
-                    <i class="fa-solid fa-building"></i>
+                    <i class="fa-solid fa-building" aria-hidden="true"></i>
                 </div>
                 <h3 class="card-title" data-i18n="card1-title">ERP Multi-tenant desde Cero</h3>
                 <p class="card-description" data-i18n="card1-description">
-                    Arquitecté y desarrollo un ERP completo para el sector construcción en Safrid Ingeniería. Sistema desacoplado usando Clean Architecture que gestiona obras, inventarios y flujos financieros.
+                    Diseñé aislamiento multi-tenant con esquemas PostgreSQL para garantizar cero filtración de datos entre clientes. Capa de dominio primero (DDD), luego API, luego UI. Full stack dockerizado con estructura lista para CI/CD.
                 </p>
                 <div class="tech-stack">
                     <span class="tech-badge">FastAPI</span>
@@ -107,7 +141,7 @@
             <div class="bento-card card-medium fade-in">
                 <div class="card-label" data-i18n="card3-label">🤖 IA & AUTOMATIZACIÓN</div>
                 <div class="card-icon">
-                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                 </div>
                 <h3 class="card-title" data-i18n="card3-title">Bot WhatsApp + LLM</h3>
                 <p class="card-description" data-i18n="card3-description">
@@ -225,7 +259,7 @@
         <div class="skills-grid">
             <div class="skill-category fade-in">
                 <h3>
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
                     <span data-i18n="skills-backend">Backend & APIs</span>
                 </h3>
                 <div class="skill-tags">
@@ -241,7 +275,7 @@
 
             <div class="skill-category fade-in">
                 <h3>
-                    <i class="fa-solid fa-database"></i>
+                    <i class="fa-solid fa-database" aria-hidden="true"></i>
                     <span data-i18n="skills-databases">Bases de Datos</span>
                 </h3>
                 <div class="skill-tags">
@@ -256,7 +290,7 @@
 
             <div class="skill-category fade-in">
                 <h3>
-                    <i class="fa-solid fa-cloud"></i>
+                    <i class="fa-solid fa-cloud" aria-hidden="true"></i>
                     <span>DevOps & Tools</span>
                 </h3>
                 <div class="skill-tags">
@@ -271,7 +305,7 @@
 
             <div class="skill-category fade-in">
                 <h3>
-                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i>
                     <span data-i18n="skills-architecture">Arquitectura & Patrones</span>
                 </h3>
                 <div class="skill-tags">
@@ -286,18 +320,47 @@
         </div>
     </section>
 
+    <section class="principles-section fade-in">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="principles-title">Cómo Trabajo</h2>
+            <p class="section-subtitle" data-i18n="principles-subtitle">Principios de ingeniería detrás de cada sistema que construyo</p>
+        </div>
+        <div class="principles-grid">
+            <div class="principle-card fade-in">
+                <div class="principle-number">01</div>
+                <h3 data-i18n="principle1-title">La complejidad es el último recurso</h3>
+                <p data-i18n="principle1-desc">Empiezo con la solución más simple que funcione, y refactorizo hacia patrones solo cuando el dolor es real.</p>
+            </div>
+            <div class="principle-card fade-in">
+                <div class="principle-number">02</div>
+                <h3 data-i18n="principle2-title">Midió, luego optimizó</h3>
+                <p data-i18n="principle2-desc">En Enovate perfilé antes de tocar código. "20 min → segundos" surgió de datos, no de intuición.</p>
+            </div>
+            <div class="principle-card fade-in">
+                <div class="principle-number">03</div>
+                <h3 data-i18n="principle3-title">La lógica de negocio define la arquitectura</h3>
+                <p data-i18n="principle3-desc">El diseño multi-tenant del ERP nació de la necesidad de aislar datos financieros por cliente, no de un blog post.</p>
+            </div>
+            <div class="principle-card fade-in">
+                <div class="principle-number">04</div>
+                <h3 data-i18n="principle4-title">Infraestructura como código</h3>
+                <p data-i18n="principle4-desc">Docker y CI/CD desde el día uno. No hago deploys manuales.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="footer-cta fade-in">
-        <h2 data-i18n="footer-title">¿Construimos algo juntos?</h2>
+        <h2 data-i18n="footer-title">Disponible para roles de Backend Engineer & Software Architect</h2>
         <p data-i18n="footer-subtitle">
-            Busco equipos que valoren código limpio, buenas prácticas y arquitecturas escalables.<br>
-            Disponible para trabajo remoto o híbrido.
+            Construyendo sistemas escalables para equipos de alto impacto.<br>
+            Abierto a oportunidades remotas e híbridas.
         </p>
         <div class="footer-cta-buttons">
             <a href="mailto:supelanosuarezluisenrique5@gmail.com" class="btn-hero btn-hero-primary">
-                <i class="fa-solid fa-envelope"></i> supelanosuarezluisenrique5@gmail.com
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i> supelanosuarezluisenrique5@gmail.com
             </a>
-            <a href="https://www.linkedin.com/in/luis-enrique-supelano-suarez-82b7b41a6" target="_blank" class="btn-hero btn-hero-secondary">
-                <i class="fa-brands fa-linkedin"></i> <span data-i18n="footer-linkedin">Conectemos en LinkedIn</span>
+            <a href="https://www.linkedin.com/in/luis-enrique-supelano-suarez-82b7b41a6" target="_blank" class="btn-hero btn-hero-secondary" rel="noopener noreferrer nofollow">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i> <span data-i18n="footer-linkedin">Conectemos en LinkedIn</span>
             </a>
         </div>
     </section>
